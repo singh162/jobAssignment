@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "3ba95df8-9fae-4669-a95c-f3be51768a85",
+		"name": "owner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15414314"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vehicle\": {\n    \"make\": \"Updated Make5\",\n    \"model\": \"Updated Mode5\",\n    \"year\": 2023,\n    \"color\": \"Updated Color5\",\n    \"registration_plate\": \"UPDATED123\",\n    \"start_date\": \"2024-02-14\",\n    \"end_date\": \"2024-02-28\"\n  },\n  \"owner\": {\n    \"first_name\": \"Updated First Name\",\n    \"last_name\": \"Updated Last Name\",\n    \"email\": \"updated.email@example.com\",\n    \"phone_number\": \"987-654-3210\"\n  },\n  \"maintenance\": {\n    \"maintenance_type\": \"Updated Maintenance\",\n    \"date\": \"2024-02-15\",\n    \"cost\": 75.00,\n    \"description\": \"Updated description\"\n  },\n  \"insurance\": {\n    \"insurance_company\": \"Updated Insurance Company\",\n    \"policy_number\": \"Updated Policy Number\",\n    \"expiry_date\": \"2024-03-01\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vehicle\": {\n    \"vehicle_id\":1,\n    \"make\": \"Toyota1\",\n    \"model\": \"Camry1\",\n    \"year\": 2022,\n    \"color\": \"Red\",\n    \"registration_plate\": \"ABC123\",\n    \"start_date\": \"2024-02-14\",\n    \"end_date\": \"2024-02-28\"\n  },\n  \"owner\": {\n    \"owner_id\":1,\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"phone_number\": \"123-456-7890\"\n  },\n  \"maintenance\": {\n    \"maintenance_type\": \"Oil Change\",\n    \"date\": \"2024-02-14\",\n    \"cost\": 50.00,\n    \"description\": \"Updated maintenance description\"\n  },\n  \"insurance\": {\n    \"insurance_company\": \"Updated Insurance Company\",\n    \"policy_number\": \"Updated Policy Number\",\n    \"expiry_date\": \"2024-03-01\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vehicle\": {\n    \"vehicle_id\":7,\n    \"make\": \"Toyota1\",\n    \"model\": \"Camry1\",\n    \"year\": 2022,\n    \"color\": \"Red\",\n    \"registration_plate\": \"ABC123\",\n    \"start_date\": \"2024-02-14\",\n    \"end_date\": \"2024-02-28\"\n  },\n  \"owner\": {\n    \"owner_id\":2,\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"phone_number\": \"123-456-7890\"\n  },\n  \"maintenance\": {\n    \"maintenance_type\": \"Oil Change\",\n    \"date\": \"2024-02-14\",\n    \"cost\": 50.00,\n    \"description\": \"Updated maintenance description\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/platform/vehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"platform",
+						"vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vehicle\": {\n    \"vehicle_id\":7,\n    \"make\": \"Toyota1\",\n    \"model\": \"Camry1\",\n    \"year\": 2022,\n    \"color\": \"Red\",\n    \"registration_plate\": \"ABC123\",\n    \"start_date\": \"2024-02-14\",\n    \"end_date\": \"2024-02-28\"\n  },\n  \"owner\": {\n    \"owner_id\":2,\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"phone_number\": \"123-456-7890\"\n  },\n  \"maintenance\": {\n    \"maintenance_type\": \"Oil Change\",\n    \"date\": \"2024-02-14\",\n    \"cost\": 50.00,\n    \"description\": \"Updated maintenance description\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/platform/vehicle/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"platform",
+						"vehicle",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
