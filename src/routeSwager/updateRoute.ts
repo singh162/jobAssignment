@@ -56,8 +56,8 @@ const updateUserBody = {
         year: { type: 'integer', example: 2022 },
         color: { type: 'string', example: 'Red' },
         registration_plate: { type: 'string', example: 'ABC123' },
-        start_date: { type: 'string', format: 'date-time', example: '2024-02-13' },
-        end_date: { type: 'string', format: 'date-time', example: '2024-02-27' },
+        start_date: { type: 'string', format: 'date-time', example: '2024-02-13 00:33:33' },
+        end_date: { type: 'string', format: 'date-time', example: '2024-02-27 00:33:33' },
       },
       required: ['make', 'model', 'year', 'color', 'registration_plate', 'start_date', 'end_date'],
     },
@@ -78,7 +78,7 @@ const updateUserBody = {
       type: 'object',
       properties: {
         maintenance_type: { type: 'string', example: 'Oil Change' },
-        date: { type: 'string', format: 'date-time', example: '2024-02-13T18:30:00.000Z' },
+        date: { type: 'string', format: 'date-time', example: '2024-02-13 00:33:33'},
         cost: { type: 'number', example: 50.00 },
         description: { type: 'string', example: 'Updated maintenance description' },
       },
@@ -90,7 +90,7 @@ const updateUserBody = {
       properties: {
         insurance_company: { type: 'string', example: 'Updated Insurance Company' },
         policy_number: { type: 'string', example: 'Updated Policy Number' },
-        expiry_date: { type: 'string', format: 'date-time', example: '2024-02-29T18:30:00.000Z' },
+        expiry_date: { type: 'string', format: 'date-time', example: '2024-02-29' },
       },
       required: ['insurance_company', 'policy_number', 'expiry_date'],
     },
