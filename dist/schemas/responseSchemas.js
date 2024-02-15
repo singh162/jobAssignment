@@ -123,14 +123,14 @@ const GetOneResponse = {
         owner_first_name: { type: 'string', example: 'Updated First Name' },
         owner_last_name: { type: 'string', example: 'Updated Last Name' },
         start_date: { type: 'string', format: 'date-time', example: '2024-02-13T18:30:00.000Z' },
-        ownership_end_date: { type: 'string', format: 'date-time', example: '2024-02-27T18:30:00.000Z' },
+        ownership_end_date: { type: 'string', format: 'date-time', example: '2024-02-27' },
         maintenance_type: { type: 'string', example: 'Oil Change' },
-        maintenance_date: { type: 'string', format: 'date-time', example: '2024-02-13T18:30:00.000Z' },
+        maintenance_date: { type: 'string', format: 'date-time', example: '2024-02-13' },
         cost: { type: 'number', example: 50.00 },
         maintenance_description: { type: 'string', example: 'Updated maintenance description' },
         insurance_company: { type: 'string', example: 'Updated Insurance Company' },
         policy_number: { type: 'string', example: 'Updated Policy Number' },
-        expiry_date: { type: 'string', format: 'date-time', example: '2024-02-29T18:30:00.000Z' },
+        expiry_date: { type: 'string', format: 'date-time', example: '2024-02-29' },
     },
 };
 exports.GetOneResponse = GetOneResponse;
