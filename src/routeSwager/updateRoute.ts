@@ -78,7 +78,7 @@ const updateUserBody = {
       type: 'object',
       properties: {
         maintenance_type: { type: 'string', example: 'Oil Change' },
-        date: { type: 'string', format: 'date-time', example: '2024-02-13 '},
+        date: { type: 'string', format: 'date-time', example: '2024-02-13'},
         cost: { type: 'number', example: 50.00 },
         description: { type: 'string', example: 'Updated maintenance description' },
       },
